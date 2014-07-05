@@ -77,7 +77,7 @@ afterEvaluate { project ->
     }
 
     task androidJavadocs(type: Javadoc) {
-        source = android.sourceSets.main.caseinsensitive
+        source = android.sourceSets.main.java
         classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
     }
 
